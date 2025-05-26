@@ -1,61 +1,82 @@
-# pavitha16-Privacy-Preserving-Machine-Learning-for-Diabetes-Disease-Classification
+# 🔐 Privacy-Preserving Machine Learning for Diabetes Disease Classification
 
-🔐 Privacy-Preserving Machine Learning for Diabetes Classification
-This project demonstrates the application of Differential Privacy (DP) techniques to machine learning models for diabetes classification using the Pima Indians Diabetes Dataset. It compares model performance and privacy guarantees across different privacy budgets (ε) using logistic regression with:
+This project explores the application of **Differential Privacy (DP)** to machine learning models for **diabetes classification** using the **Pima Indians Diabetes Dataset**. It evaluates the **privacy-utility trade-off** across various privacy budgets (ε) using **Logistic Regression** with:
 
-✅ Objective Perturbation
+- ✅ Objective Perturbation  
+- ✅ Output Perturbation  
+- ✅ Non-Private Baseline  
 
-✅ Output Perturbation
+---
 
-✅ Non-Private Baseline
+## 📊 Dataset
 
-📊 Dataset
-Pima Indians Diabetes Dataset
+- **Name**: Pima Indians Diabetes Dataset  
+- **Instances**: 768 female patients (21+ years old)  
+- **Features**: 8 diagnostic attributes  
+- **Target**: `Outcome` (0 = Non-diabetic, 1 = Diabetic)
 
-768 female patients (21+ years)
+🔗 [Download Dataset](https://drive.google.com/file/d/14aqc4rK8hcFSES-SlRztGBlGca-QuIDd/view?usp=sharing)
 
-8 diagnostic features
+---
 
-Binary target: Outcome (0: Non-diabetic, 1: Diabetic)
+## 🔍 Key Techniques
 
-📥 Download Dataset
+### 1. Objective Perturbation
+- Adds **Gaussian noise** to the loss function.
+- Ensures **(ε, δ)-Differential Privacy**.
+- Optimized using **L-BFGS-B**.
 
-🔍 Key Techniques
-1. Objective Perturbation
-Adds Gaussian noise to the loss function. Ensures (ε, δ)-DP.
+### 2. Output Perturbation
+- Adds **Laplace noise** to trained model weights.
+- Ensures **ε-Differential Privacy**.
+- Simpler, but less utility at strict privacy levels.
 
-2. Output Perturbation
-Adds Laplace noise to model weights post-training. Ensures ε-DP.
+### 3. Noise Mechanisms Used
+- **Laplace Mechanism**  
+- **Gaussian Mechanism**  
+- **Exponential Mechanism**  
+- **Randomized Response**  
+- **Shuffling Mechanism**
 
-3. Noise Mechanisms Used
-Laplace
+---
 
-1) Gaussian
+## ⚙️ Implementation Highlights
 
-2) Exponential
+- 🔧 Feature scaling using `StandardScaler`
+- 🔄 Train-test split (80/20) with stratified sampling
+- 📈 Evaluation Metrics:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1 Score
+  - AUC-ROC
+- 📉 Privacy-Utility Tradeoff Analysis
+- 📊 Visualization of noise impact on data distribution
 
-3) Randomized Response
+---
 
-4) shuffling
+## 📈 Privacy-Utility Insights
 
-⚙️ Implementation Highlights
-Feature Scaling with StandardScaler
+- **Lower ε → Higher Privacy → Lower Accuracy**
+- **Higher ε → Lower Privacy → Higher Accuracy**
 
-Logistic Regression with/without Differential Privacy
+### 🔎 Results Summary:
+- Objective Perturbation outperforms Output Perturbation, especially at low ε.
+- Epsilon in **1.0 – 5.0** provides a practical balance of privacy and utility.
+- Visualization shows progressive data distortion as ε decreases.
 
-Evaluation: Accuracy, AUC-ROC, Precision, Recall, F1
+---
 
-Privacy-Utility Tradeoff Analysis
+## 🧠 Conclusion
 
-📈 Lower ε = Higher privacy + Lower accuracy
-📈 Higher ε = Lower privacy + Better accuracy
+This implementation demonstrates how **Differential Privacy** can be effectively applied to **healthcare datasets**, preserving **patient confidentiality** while maintaining strong **predictive performance**. It offers a practical framework for privacy-aware machine learning in sensitive domains.
 
-📌 Results
-Objective Perturbation maintains better utility than Output Perturbation.
+---
 
-Epsilon values in the 1.0 – 5.0 range strike a practical balance between privacy and performance.
+## 📁 Code & Data
 
-Visualization shows impact of noise at different privacy levels.
+- 📂 [Code Repository](https://drive.google.com/file/d/1uV9FGOaUDWaq31RHoEL_Vu2NB6hf5Wm_/view?usp=sharing)
+- 📄 [Dataset Link](https://drive.google.com/file/d/14aqc4rK8hcFSES-SlRztGBlGca-QuIDd/view?usp=sharing)
 
-🧠 Conclusion
-This implementation provides a practical framework to apply Differential Privacy in healthcare, balancing data confidentiality with model effectiveness.
+---
+
