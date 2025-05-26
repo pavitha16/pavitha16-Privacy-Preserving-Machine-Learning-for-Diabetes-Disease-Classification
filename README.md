@@ -6,7 +6,7 @@ This project explores the application of **Differential Privacy (DP)** to machin
 - ✅ Output Perturbation  
 - ✅ Non-Private Baseline  
 
----
+
 
 ## 📊 Dataset
 
@@ -17,7 +17,7 @@ This project explores the application of **Differential Privacy (DP)** to machin
 
 🔗 [Download Dataset](https://drive.google.com/file/d/14aqc4rK8hcFSES-SlRztGBlGca-QuIDd/view?usp=sharing)
 
----
+
 
 ## 🔍 Key Techniques
 
@@ -38,7 +38,7 @@ This project explores the application of **Differential Privacy (DP)** to machin
 - **Randomized Response**  
 - **Shuffling Mechanism**
 
----
+
 
 ## ⚙️ Implementation Highlights
 
@@ -53,7 +53,7 @@ This project explores the application of **Differential Privacy (DP)** to machin
 - 📉 Privacy-Utility Tradeoff Analysis
 - 📊 Visualization of noise impact on data distribution
 
----
+
 
 ## 📈 Privacy-Utility Insights
 
@@ -65,18 +65,18 @@ This project explores the application of **Differential Privacy (DP)** to machin
 - Epsilon in **1.0 – 5.0** provides a practical balance of privacy and utility.
 - Visualization shows progressive data distortion as ε decreases.
 
----
+
 
 ## 🧠 Conclusion
 
 This implementation demonstrates how **Differential Privacy** can be effectively applied to **healthcare datasets**, preserving **patient confidentiality** while maintaining strong **predictive performance**. It offers a practical framework for privacy-aware machine learning in sensitive domains.
 
----
+
 
 ## 📁 Code & Data
 
 - 📂 [Code Repository](https://drive.google.com/file/d/1uV9FGOaUDWaq31RHoEL_Vu2NB6hf5Wm_/view?usp=sharing)
 - 📄 [Dataset Link](https://drive.google.com/file/d/14aqc4rK8hcFSES-SlRztGBlGca-QuIDd/view?usp=sharing)
 
----
+
 
