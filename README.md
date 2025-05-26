@@ -1,5 +1,6 @@
-# pavitha16-Privacy-Preserving-Machine-Learning-for-Diabetes-Disease-
-##🔐 Privacy-Preserving Machine Learning for Diabetes Classification##
+# pavitha16-Privacy-Preserving-Machine-Learning-for-Diabetes-Disease-Classification
+
+-🔐 Privacy-Preserving Machine Learning for Diabetes Classification
 This project demonstrates the application of Differential Privacy (DP) techniques to machine learning models for diabetes classification using the Pima Indians Diabetes Dataset. It compares model performance and privacy guarantees across different privacy budgets (ε) using logistic regression with:
 
 ✅ Objective Perturbation
@@ -8,7 +9,7 @@ This project demonstrates the application of Differential Privacy (DP) technique
 
 ✅ Non-Private Baseline
 
-##📊 Dataset##
+-📊 Dataset
 Pima Indians Diabetes Dataset
 
 768 female patients (21+ years)
@@ -29,15 +30,15 @@ Adds Laplace noise to model weights post-training. Ensures ε-DP.
 3. Noise Mechanisms Used
 Laplace
 
-Gaussian
+1) Gaussian
 
-Exponential
+2) Exponential
 
-Randomized Response
+3) Randomized Response
 
-Shuffling
+S4) huffling
 
-⚙️ Implementation Highlights
+-⚙️ Implementation Highlights
 Feature Scaling with StandardScaler
 
 Logistic Regression with/without Differential Privacy
@@ -49,12 +50,12 @@ Privacy-Utility Tradeoff Analysis
 📈 Lower ε = Higher privacy + Lower accuracy
 📈 Higher ε = Lower privacy + Better accuracy
 
-📌 Results
+-📌 Results
 Objective Perturbation maintains better utility than Output Perturbation.
 
 Epsilon values in the 1.0 – 5.0 range strike a practical balance between privacy and performance.
 
 Visualization shows impact of noise at different privacy levels.
 
-🧠 Conclusion
+-🧠 Conclusion
 This implementation provides a practical framework to apply Differential Privacy in healthcare, balancing data confidentiality with model effectiveness.
